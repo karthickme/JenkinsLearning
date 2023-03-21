@@ -1,9 +1,10 @@
-/* Requires the Docker Pipeline plugin */
 pipeline {
+    agent any
+
     stages {
-        stage('build') {
+        stage ('Print') {
             steps {
-                sh 'echo hello'
+                echo "Hello Devops Engineers"
             }
         }
     }
